@@ -5,7 +5,7 @@ def makeTokens(f):
         tokens.append(i)
     return tokens
 def get_security(password):
-    model = pickle.load(open('lstm_model.sav', 'rb'))
+    model = pickle.load(open('seq_model.sav', 'rb'))
     vectorizer = pickle.load(open('vectorizer.sav', 'rb'))
     X_predict = []
     X_predict.append(password)
